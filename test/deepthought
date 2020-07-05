@@ -3,7 +3,7 @@ $> hostname; uname -msr
 Jings-MacBook-Pro.local
 Darwin 17.7.0 x86_64
 $> date
-Thu  2 Jul 2020 23:35:44 EEST
+Sun  5 Jul 2020 14:46:11 EEST
 $> gcc --version
 Apple LLVM version 10.0.0 (clang-1000.10.44.4)
 Target: x86_64-apple-darwin17.7.0
@@ -79,7 +79,7 @@ ar rc libft.a ft_memset.o ft_bzero.o ft_memcpy.o ft_memchr.o ft_memccpy.o ft_mem
 ranlib libft.a
 
 $> ls -la libft.a
--rw-r--r--  1 jingtian  staff  46920  2 Jul 23:35 /Users/jingtian/Desktop/libft/testing/tmp_tests_dir/libft.a
+-rw-r--r--  1 jingtian  staff  46936  5 Jul 14:46 /Users/jingtian/Desktop/libft/test/tmp_tests_dir/libft.a
 
 = Part1_functions ==============================================================
 
@@ -88,7 +88,7 @@ $> norminette ft_atoi.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_atoi/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_atoi/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -191,7 +191,7 @@ $> norminette ft_bzero.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_bzero/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_bzero/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -212,7 +212,7 @@ $> norminette ft_isalnum.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_isalnum/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_isalnum/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -255,7 +255,7 @@ $> norminette ft_isalpha.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_isalpha/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_isalpha/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -298,7 +298,7 @@ $> norminette ft_isascii.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_isascii/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_isascii/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -341,7 +341,7 @@ $> norminette ft_isdigit.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_isdigit/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_isdigit/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -384,7 +384,7 @@ $> norminette ft_isprint.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_isprint/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_isprint/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -427,7 +427,7 @@ $> norminette ft_memccpy.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_memccpy/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_memccpy/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -455,7 +455,7 @@ $> norminette ft_memchr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_memchr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_memchr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -493,7 +493,7 @@ $> norminette ft_memcmp.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_memcmp/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_memcmp/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -546,7 +546,7 @@ $> norminette ft_memcpy.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_memcpy/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_memcpy/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -569,7 +569,7 @@ $> norminette ft_memmove.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_memmove/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_memmove/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -602,7 +602,7 @@ $> norminette ft_memset.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_memset/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_memset/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -630,7 +630,7 @@ $> norminette ft_strchr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_strchr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_strchr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -668,7 +668,7 @@ $> norminette ft_strdup.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_strdup/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_strdup/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -681,7 +681,7 @@ $> norminette ft_strlcat.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_strlcat/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_strlcat/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -737,7 +737,7 @@ $> norminette ft_strlen.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_strlen/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_strlen/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -775,7 +775,7 @@ $> norminette ft_strncmp.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_strncmp/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_strncmp/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -827,13 +827,18 @@ $> ./user_exe 10
 $> diff -U 3 user_output_test10 test10.output
 
 Diff OK :D
+= Test 11 ==================================================
+$> ./user_exe 11
+$> diff -U 3 user_output_test11 test11.output
+
+Diff OK :D
 
 = ft_strnstr ===================================================================
 $> norminette ft_strnstr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_strnstr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_strnstr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -891,7 +896,7 @@ $> norminette ft_strrchr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_strrchr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_strrchr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -939,7 +944,7 @@ $> norminette ft_tolower.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_tolower/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_tolower/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -982,7 +987,7 @@ $> norminette ft_toupper.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part1_functions/ft_toupper/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part1_functions/ft_toupper/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1027,7 +1032,7 @@ $> norminette ft_itoa.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_itoa/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_itoa/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1085,7 +1090,7 @@ $> norminette ft_putchar_fd.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_putchar_fd/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_putchar_fd/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1128,7 +1133,7 @@ $> norminette ft_putendl_fd.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_putendl_fd/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_putendl_fd/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1156,7 +1161,7 @@ $> norminette ft_putnbr_fd.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_putnbr_fd/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_putnbr_fd/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1209,7 +1214,7 @@ $> norminette ft_putstr_fd.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_putstr_fd/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_putstr_fd/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1237,7 +1242,7 @@ $> norminette ft_strsplit.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_strsplit/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_strsplit/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1270,7 +1275,7 @@ $> norminette ft_strjoin.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_strjoin/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_strjoin/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1298,7 +1303,7 @@ $> norminette ft_strmapi.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_strmapi/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_strmapi/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1311,7 +1316,7 @@ $> norminette ft_strtrim.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_strtrim/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_strtrim/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1344,7 +1349,7 @@ $> norminette ft_strsub.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Part2_functions/ft_strsub/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Part2_functions/ft_strsub/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1403,7 +1408,7 @@ $> norminette ft_memalloc.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_memalloc/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_memalloc/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1416,7 +1421,7 @@ $> norminette ft_memdel.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_memdel/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_memdel/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1429,7 +1434,7 @@ $> norminette ft_putchar.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_putchar/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_putchar/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1472,7 +1477,7 @@ $> norminette ft_putendl.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_putendl/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_putendl/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1500,7 +1505,7 @@ $> norminette ft_putnbr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_putnbr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_putnbr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1553,7 +1558,7 @@ $> norminette ft_putstr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_putstr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_putstr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1581,7 +1586,7 @@ $> norminette ft_strcat.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strcat/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strcat/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1604,7 +1609,7 @@ $> norminette ft_strclr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strclr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strclr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1617,7 +1622,7 @@ $> norminette ft_strcmp.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strcmp/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strcmp/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1649,13 +1654,18 @@ $> ./user_exe 06
 $> diff -U 3 user_output_test06 test06.output
 
 Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
 
 = ft_strcpy ====================================================================
 $> norminette ft_strcpy.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strcpy/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strcpy/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1678,7 +1688,7 @@ $> norminette ft_strdel.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strdel/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strdel/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1691,7 +1701,7 @@ $> norminette ft_strequ.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strequ/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strequ/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1734,7 +1744,7 @@ $> norminette ft_striter.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_striter/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_striter/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1747,7 +1757,7 @@ $> norminette ft_striteri.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_striteri/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_striteri/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1760,7 +1770,7 @@ $> norminette ft_strmap.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strmap/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strmap/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1773,7 +1783,7 @@ $> norminette ft_strncat.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strncat/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strncat/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1806,7 +1816,7 @@ $> norminette ft_strncpy.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strncpy/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strncpy/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1844,7 +1854,7 @@ $> norminette ft_strnequ.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strnequ/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strnequ/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1907,7 +1917,7 @@ $> norminette ft_strnew.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strnew/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strnew/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
@@ -1925,7 +1935,7 @@ $> norminette ft_strstr.c | grep -E '(Error|Warning)'
 
 norminette : command not found
 
-$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/testing/tests/Additional_functions/ft_strstr/main.c -L/Users/jingtian/Desktop/libft/testing/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/testing/tmp_tests_dir
+$> clang -Wextra -Wall -Werror /Users/jingtian/Desktop/libft/test/tests/Additional_functions/ft_strstr/main.c -L/Users/jingtian/Desktop/libft/test/tmp_tests_dir -lft -I/Users/jingtian/Desktop/libft/test/tmp_tests_dir
 
 = Test 1 ===================================================
 $> ./user_exe 01
